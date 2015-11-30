@@ -1,0 +1,41 @@
+#
+# These things are run when an Openbox X Session is started.
+# You may place a similar script in $HOME/.config/openbox/autostart
+# to run user-specific things.
+#
+
+# If you want to use GNOME config tools...
+#
+#if test -x /usr/lib/openbox/gnome-settings-daemon >/dev/null; then
+#  /usr/lib/openbox/gnome-settings-daemon &
+#elif which gnome-settings-daemon >/dev/null 2>&1; then
+#  gnome-settings-daemon &
+#fi
+
+# If you want to use XFCE config tools...
+#
+#xfce-mcs-manager &
+#tint2 &
+nitrogen --restore &
+compton -b &
+volumeicon &
+urxvtd -q -f -o &
+#skype &
+/usr/lib/xfce4/notifyd/xfce4-notifyd &
+plank &
+xfce4-panel &
+setxkbmap -layout "us,ge,ru" -option "grp:alt_shift_toggle" &
+
+
+#subl &
+
+urxvtd &
+
+#lemonbar
+#sleep .5s &&
+#/home/david/.config/lemonbar/clock.sh &
+#leep 1s &&
+#/home/david/.config/lemonbar/workspace.sh &
+#sleep .5s &&
+#home/david/.config/lemonbar/music.sh &
+#/home/david/.config/lemonbar/launcher.sh &
