@@ -1,0 +1,68 @@
+! Dylans Xresources
+URxvt*font: xft:drift:pixelsize=17
+URxvt.letterSpace: -1
+
+! Terminal window size
+URxvt*geometry: 75x24
+
+xterm*termName: xterm-256color
+URxvt.scrollBar: false
+URxvt*loginShell: true
+
+! Set terminal padding
+URxvt.internalBorder: 6
+
+! Enables copy/paste with Ctrl-Shift-C/V
+URxvt.iso14755: False
+URxvt.perl-ext-common: clipboard
+URxvt.keysym.Shift-Control-C:   perl:clipboard:copy
+URxvt.keysym.Shift-Control-V:   perl:clipboard:paste
+URxvt.keysym.M-C-v: perl:clipboard:paste_escaped
+
+! Disable these keybindings
+URxvt.keysym.C-z: \
+URxvt.keysym.C-h: \
+URxvt.keysym.C-f: \
+
+Xcursor.size: 16
+
+! ryuuko Colors {{{
+
+! special
+*.foreground:   #f2f3f2
+*.background:   #363740
+*.cursorColor:  #f2f3f2
+
+! black
+*.color0:       #363740
+*.color8:       #75747a
+
+! red
+*.color1:       #BF687F
+*.color9:       #BF687F
+
+! green
+*.color2:       #9BB38F
+*.color10:      #9BB38F
+
+! yellow
+*.color3:       #e5c196
+*.color11:      #e5c196
+
+! blue
+*.color4:       #8294b4
+*.color12:      #8294b4
+
+! magenta
+*.color5:       #E68A8B
+*.color13:      #E68A8B
+
+! cyan
+*.color6:       #95B9BF
+*.color14:      #95B9BF
+
+! white
+*.color7:       #f2f3f2
+*.color15:      #f2f3f2
+
+! }}}
